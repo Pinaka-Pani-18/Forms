@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.form {
+  border: 2px solid rgb(176, 255, 251);
+  padding: 25px;
+  display: flex;
+  max-width: 420px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  color: rgb(176, 255, 251);
+  background-color: rgba(65, 65, 65, 0.508);
+  border-radius: 20px;
+  position: relative;
+}
+
+.info {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.description {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.form .input-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form .input-fields input {
+  height: 2.5em;
+  width: 2.5em;
+  outline: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 12px;
+  border: 2.5px solid rgba(253, 253, 253, 0.363);
+  background-color: rgb(255 255 255 / 0.05);
+}
+
+.form .input-fields input:focus {
+  border: 1px solid skyblue;
+  box-shadow: inset -1px -1px 5px rgba(255, 255, 255, 0.6),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.action-btns {
+  display: flex;
+  margin-top: 12px;
+  gap: 0.5rem;
+}
+
+.verify {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: skyblue;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.verify:hover,
+:focus {
+  color: #ffffff;
+  background: skyblue;
+  border: 1px solid skyblue;
+  box-shadow: 0 0 5px skyblue, 0 0 20px skyblue, 0 0 50px skyblue,
+    0 0 100px skyblue;
+}
+
+.clear {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: red;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.clear:hover,
+:focus {
+  color: #ffffff;
+  background: red;
+  border: 1px solid red;
+  box-shadow: 0 0 5px red, 0 0 20px red, 0 0 50px red, 0 0 100px red;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #494949;
+  color: red;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.close:hover {
+  background-color: red;
+  color: #fff;
+}
